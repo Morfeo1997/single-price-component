@@ -1,0 +1,238 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(204, 43%, 93%);
+	font-family: 'Karla', sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+.main-container-mobile{
+	display: none;
+}
+
+.main-container-desktop{
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	width: 55vw;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	margin: 2vh 0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+.header-container{
+	display: flex;
+	flex-direction: column;
+	height: 45%;
+	width: 100%;
+	background-color: white;
+	padding: 2%;
+}
+
+.header-container > h2{
+	color: hsl(179, 62%, 43%);
+}
+
+.header-container > em{
+	color: hsl(71, 73%, 54%);
+}
+
+.header-container > p{
+	color: hsl(218, 22%, 67%);
+	position: relative;
+	margin: 1vh 0;
+}
+
+
+.info-container{
+	display: flex;
+	flex-direction: row;
+	height: 55%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+.sign-up{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding: 0;
+	width: 50%;
+	height: 100%;
+	background-color: hsl(179, 52%, 43%);
+}
+
+.sign-up > h4{
+	font-size: 20px;
+	position: relative;
+	left: 1.8em;
+	top: 1em;
+}
+
+
+.sign-up > p {
+	color: hsl(204, 43%, 93%);
+	position: relative;
+	left: 2em;
+}
+
+.sign-up > p > em{
+	color: white;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.sign-up > .full-access{
+	color: white;
+}
+
+
+.sign-up > button{
+	background-color: hsl(71, 73%, 54%);
+	padding: 3% 3%;
+	width: 70%;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	position: relative;
+	left: 2em;
+	cursor: pointer;
+}
+
+.why-us{
+	display: flex;
+	flex-direction: column;
+	color: hsl(204, 43%, 93%);
+	width: 50%;
+	height: 100%;
+	background-color: hsl(179, 62%, 45%);
+	padding: 0;
+
+}
+
+.why-us > h4{
+	font-size: 20px;
+	position: relative;
+	left: 1.8em;
+	top: 1em;
+	color: white;
+}
+
+.why-us > p{
+	margin: 0.2%;
+	position: relative;
+	left: 2em;
+	top: 1em;
+}
+
+.footer{
+
+}
+
+.footer > p > a{
+	color: hsl(179, 62%, 43%);
+	text-decoration: none;
+}
+
+.footer > p > a:hover{
+	color: hsl(71, 73%, 54%);
+}
+
+
+
+@media screen and (max-width: 375px){
+	.main-container-desktop{
+		display: none;
+	}
+
+	.main-container-mobile{
+		display: flex;
+		flex-direction: column;
+		width: 90vw;
+		height: 120vh;
+		margin: 5% 2.5%;
+
+	}
+
+	.header-container{
+		width: 100%;
+		height: 30%;
+	}
+
+	.sign-up{
+		width: 100%;
+		height: 33%;
+		padding: 2% 1%;
+	}
+
+	.sign-up > h4{
+	font-size: 18px;
+	position: relative;
+	}
+	.sign-up > p {
+	color: hsl(204, 43%, 93%);
+	position: relative;
+	left: 2em;
+	}
+
+	.sign-up > p > em{
+	color: white;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	}
+
+	.sign-up > .full-access{
+	color: white;
+	}
+
+
+	.sign-up > button{
+	background-color: hsl(71, 73%, 54%);
+	padding: 3% 3%;
+	width: 70%;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	}
+
+	.why-us{
+		width: 100%;
+		height: 33%;
+		padding: 0% 1% 0 1%;
+	}
+
+	.why-us > h4 {
+		position: relative;
+		bottom: 5%;
+	}
+
+	.why-us > p{
+		position: relative;
+		bottom: 5%;
+	}
+
+	footer{
+		display: none;
+	}
+
+}
